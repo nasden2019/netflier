@@ -1,0 +1,70 @@
+nav {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://i.ibb.co/vXqDmnh/background.jpg') no-repeat center center/cover;
+    height: 89vh;
+
+    // logo
+    img {
+        width: 11rem;
+        margin-top: 10px;
+
+        // desktop margin-left al logo
+        @media (min-width:728px) {
+            margin-left: 490px;
+        }
+    }
+
+    // mobile
+    h1 {
+        color: white;
+        font-weight: 700;
+    }
+
+    // mobile
+    p {
+        color: white;
+        font-size: 1.1rem;
+        text-transform: capitalize;
+    }
+
+    // boton grande
+    .btnBig {
+        color: white;
+        padding: 12px 85px;
+        background: red;
+        font-size: 1.2rem;
+        text-decoration: none;
+
+        // desktop
+        @media (min-width: 728px) {
+            padding: 15px 40px;
+            font-size: 32px;
+            text-transform: capitalize;
+        }
+    }
+
+    // boton sign in
+    .btnSign {
+        color: white;
+        padding: 4px 22px;
+        background: red;
+        margin: 12px 50px 0 0;
+        border-radius: 6px;
+        font-size: 17px;
+    }
+
+    // h1 mobile
+    .hNext {
+        margin-top: -15px !important;
+    }
+
+    // h1 desktop
+    .h1Deskt {
+        font-size: 5rem;
+        font-weight: 700;
+    }
+
+    // p desktop
+    .pDeskt {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,125 @@
+nav {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("https://i.ibb.co/vXqDmnh/background.jpg") no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://i.ibb.co/vXqDmnh/background.jpg") no-repeat center center/cover;
+  height: 89vh;
+}
+
+nav img {
+  width: 11rem;
+  margin-top: 10px;
+}
+
+@media (min-width: 728px) {
+  nav img {
+    margin-left: 490px;
+  }
+}
+
+nav h1 {
+  color: white;
+  font-weight: 700;
+}
+
+nav p {
+  color: white;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+}
+
+nav .btnBig {
+  color: white;
+  padding: 12px 85px;
+  background: red;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+@media (min-width: 728px) {
+  nav .btnBig {
+    padding: 15px 40px;
+    font-size: 32px;
+    text-transform: capitalize;
+  }
+}
+
+nav .btnSign {
+  color: white;
+  padding: 4px 22px;
+  background: red;
+  margin: 12px 50px 0 0;
+  border-radius: 6px;
+  font-size: 17px;
+}
+
+nav .hNext {
+  margin-top: -15px !important;
+}
+
+nav .h1Deskt {
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+nav .pDeskt {
+  font-size: 2rem;
+}
+
+.threeCols {
+  background: #141414;
+}
+
+.threeCols h5 {
+  color: #868282;
+  font-size: 1.3rem;
+}
+
+.threeCols h5:hover {
+  color: white;
+}
+
+.tab-1 .btnTabs,
+.tab-2 .btnTabs,
+.tab-3 .btnTabs {
+  padding: 13px 45px;
+  background: red;
+  color: white;
+}
+
+.tab-1 h4,
+.tab-2 h4,
+.tab-3 h4 {
+  font-size: 28px;
+}
+
+.tab-1 p,
+.tab-2 p,
+.tab-3 p {
+  margin-top: 20px;
+  color: #868282;
+  font-size: 1rem;
+}
+
+.tab-1 h6,
+.tab-2 h6,
+.tab-3 h6 {
+  margin-top: 15px;
+  color: white;
+  font-size: 19px;
+}
+
+table th,
+table td {
+  color: #999999;
+}
+
+footer li,
+footer p {
+  list-style: none;
+  color: #999999;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+body {
+  background: black;
+}

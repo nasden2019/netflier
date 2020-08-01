@@ -1,0 +1,51 @@
+// 3 colum tab
+.threeCols {
+    background: $columnsTabs;
+
+    h5 {
+        color: rgb(134, 130, 130);
+        font-size: 1.3rem;
+
+        &:hover {
+            color: white;
+            // text-decoration: red 3px solid !important;
+        }
+    }
+}
+
+// First-second and third Tabs
+.tab-1,
+.tab-2,
+.tab-3 {
+    .btnTabs {
+        padding: 13px 45px;
+        background: red;
+        color: white;
+    }
+
+    h4 {
+        font-size: 28px;
+        // margin: 8px 0 16px;
+    }
+
+    p {
+        margin-top: 20px;
+        color: rgb(134, 130, 130);
+        font-size: 1rem;
+    }
+
+    h6 {
+        margin-top: 15px;
+        color: white;
+        font-size: 19px;
+    }
+}
+
+// TABLE THIRD COL
+table {
+
+    th,
+    td {
+        color: #999999
+    }
+}

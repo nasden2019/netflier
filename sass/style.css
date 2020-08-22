@@ -66,6 +66,15 @@ nav .pDeskt {
 
 .threeCols {
   background: #141414;
+  cursor: pointer;
+}
+
+.threeCols i {
+  color: darkgray;
+}
+
+.threeCols i:hover {
+  color: white;
 }
 
 .threeCols h5 {
@@ -77,12 +86,19 @@ nav .pDeskt {
   color: white;
 }
 
+.tab-1,
+.tab-2,
+.tab-3 {
+  display: none;
+}
+
 .tab-1 .btnTabs,
 .tab-2 .btnTabs,
 .tab-3 .btnTabs {
   padding: 13px 45px;
   background: red;
   color: white;
+  text-decoration: none;
 }
 
 .tab-1 h4,
@@ -107,9 +123,60 @@ nav .pDeskt {
   font-size: 19px;
 }
 
+.tab-border {
+  border-bottom: 3px solid red;
+}
+
 table th,
 table td {
   color: #999999;
+}
+
+main {
+  overflow: scroll;
+}
+
+@media (max-width: 700px) {
+  .tab-1,
+  .tab-2,
+  .tab-3 {
+    display: none;
+  }
+  .tab-1 h4,
+  .tab-2 h4,
+  .tab-3 h4 {
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 0 60px;
+  }
+  .tab-1 .btnTabs,
+  .tab-2 .btnTabs,
+  .tab-3 .btnTabs {
+    padding: 13px 8px;
+    text-decoration: none;
+  }
+  .tab-1 img,
+  .tab-2 img,
+  .tab-3 img {
+    width: 55%;
+    margin-bottom: 8px;
+  }
+  .tab-1 p,
+  .tab-2 p,
+  .tab-3 p {
+    margin: 0 70px 40px 70px;
+  }
+  .tab-1 h6,
+  .tab-2 h6,
+  .tab-3 h6 {
+    margin: 0 50px;
+    margin-bottom: 8px;
+  }
+}
+
+.show {
+  display: block !important;
+  opacity: 1 !important;
 }
 
 footer li,

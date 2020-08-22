@@ -2,6 +2,16 @@
 .threeCols {
     background: $columnsTabs;
 
+    cursor: pointer;
+
+    i {
+        color: darkgray;
+
+        &:hover {
+            color: white;
+        }
+    }
+
     h5 {
         color: rgb(134, 130, 130);
         font-size: 1.3rem;
@@ -13,14 +23,17 @@
     }
 }
 
-// First-second and third Tabs
+// TABS CONTENT FOR DESKTOP
 .tab-1,
 .tab-2,
 .tab-3 {
+    display: none;
+
     .btnTabs {
         padding: 13px 45px;
         background: red;
         color: white;
+        text-decoration: none;
     }
 
     h4 {
@@ -41,11 +54,65 @@
     }
 }
 
-// TABLE THIRD COL
+// TAB RED BORDER
+.tab-border {
+    border-bottom: 3px solid red;
+}
+
+// ---------TABLE: THIRD TAB---------
 table {
 
     th,
     td {
-        color: #999999
+        color: #999999;
     }
+}
+
+// TABLE RESPONSIVENESS
+main {
+    overflow: scroll;
+}
+
+// ------- TABS MOBILE --------
+// TAB 1
+.tab-1,
+.tab-2,
+.tab-3 {
+    @media (max-width: 700px) {
+        display: none;
+
+        // texto
+        h4 {
+            font-size: 1.3rem;
+            text-align: center;
+            margin: 0 60px;
+        }
+
+        // boton
+        .btnTabs {
+            padding: 13px 8px;
+            text-decoration: none;
+            // margin-top: 430px;
+        }
+
+        img {
+            width: 55%;
+            margin-bottom: 8px;
+        }
+
+        p {
+            margin: 0 70px 40px 70px;
+        }
+
+        h6 {
+            margin: 0 50px;
+            margin-bottom: 8px;
+        }
+    }
+}
+
+// FOR JAVASCRIPT PURPOSES: HIDE INITIAL TABS
+.show {
+    display: block !important;
+    opacity: 1 !important;
 }

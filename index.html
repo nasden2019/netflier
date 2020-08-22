@@ -14,6 +14,12 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,300;1,400;1,800&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+      integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="/sass/style.css" />
   </head>
 
@@ -67,14 +73,17 @@
         <div class="row">
           <div class="col-12 col-sm-12">
             <div class="row">
-              <div class="col-4 col-sm-4 text-center">
-                <h5>Cancel at any time</h5>
+              <div class="col-4 col-sm-4 text-center tab-selectors active">
+                <h5 class="d-none d-sm-block">Cancel at any time</h5>
+                <i class="fas fa-door-open fa-3x d-block d-sm-none"></i>
               </div>
-              <div class="col-4 col-sm-4 text-center">
-                <h5>Watch anywhere</h5>
+              <div class="col-4 col-sm-4 text-center tab-selectors">
+                <h5 class="d-none d-sm-block">Watch anywhere</h5>
+                <i class="fas fa-tablet-alt fa-3x d-block d-sm-none"></i>
               </div>
-              <div class="col-4 col-sm-4 text-center">
-                <h5>Pick your price</h5>
+              <div class="col-4 col-sm-4 text-center tab-selectors">
+                <h5 class="d-none d-sm-block">Pick your price</h5>
+                <i class="fas fa-tags fa-3x d-block d-sm-none"></i>
               </div>
             </div>
           </div>
@@ -82,11 +91,15 @@
       </div>
     </section>
 
-    <!-- TABS -->
-    <section class="py-sm-5" style="background: black;">
+    <!-- TABS DESKTOP and MOBILE -->
+    <section class="py-sm-5 d-sm-block d-block" style="background: black;">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-sm-12 tab-1">
+          <!-- class show, will be use to show each selected content -->
+          <div
+            class="col-12 col-sm-12 tab-1 tab-content active"
+            id="tab-1-content"
+          >
             <div class="row">
               <div
                 class="col-12 col-sm-6 d-flex flex-column justify-content-center"
@@ -95,15 +108,28 @@
                   If you decide Netflix isn't for you - no problem. <br />No
                   commitment. Cancel online anytime.
                 </h4>
-                <h4 class="text-white d-sm-none d-block">
+                <!-- h4 mobile -->
+                <h4 class="text-white text-center d-sm-none d-block mt-5">
                   If you decide Netflix isn't for you - no problem. No
-                  commitment. Cancel online anytime.
+                  commitment. Cancel online anytimee.
                 </h4>
-                <div class="text-left mt-sm-4">
+                <div class="text-sm-left text-xs-center mt-sm-4 d-none">
+                  <a href="" class="btnTabs">WATCH FREE FOR 30 DAYS</a>
+                </div>
+                <!-- boton mobile -->
+                <div class="text-center d-block d-sm-none mt-5">
                   <a href="" class="btnTabs">WATCH FREE FOR 30 DAYS</a>
                 </div>
               </div>
-              <div class="col-sm-6">
+              <div class="col-sm-6 d-sm-block d-none">
+                <img
+                  src="https://i.ibb.co/J2xDJV7/tab-content-1.png"
+                  class="img-fluid ml-sm-5"
+                  alt=""
+                />
+              </div>
+              <!-- img mobile -->
+              <div class="col-sm-6 text-center d-sm-none d-block mt-4">
                 <img
                   src="https://i.ibb.co/J2xDJV7/tab-content-1.png"
                   class="img-fluid ml-sm-5"
@@ -114,16 +140,29 @@
           </div>
 
           <!------= SECOND TAB! ----->
-          <div class="col-sm-12 col-12 py-sm-5 tab-2">
+          <div
+            class="col-sm-12 col-12 py-sm-5 tab-2 tab-content"
+            id="tab-2-content"
+            style="display: none;"
+          >
             <div class="row">
               <div class="col-sm-8">
-                <h4 class="text-white">
+                <h4 class="text-white d-none d-sm-block">
+                  Watch TV shows and movies anytime, anywhere — personalized for
+                  you.
+                </h4>
+                <!-- h4 MOBILE-->
+                <h4 class="text-white mt-5 d-block d-sm-none">
                   Watch TV shows and movies anytime, anywhere — personalized for
                   you.
                 </h4>
               </div>
               <div class="col-sm-4">
-                <div class="mt-sm-4">
+                <div class="mt-sm-4 d-sm-block d-none">
+                  <a href="" class="btnTabs">WATCH FREE FOR 30 DAYS</a>
+                </div>
+                <!-- boton mobile -->
+                <div class="my-5 text-center d-block d-sm-none">
                   <a href="" class="btnTabs">WATCH FREE FOR 30 DAYS</a>
                 </div>
               </div>
@@ -170,86 +209,106 @@
           </div>
 
           <!------ THIRD TAB TABLE------>
-          <table class="table table-striped table-dark py-sm-5">
-            <thead>
-              <tr style="background: black;">
-                <th scope="col" class="ml-sm-5"></th>
-                <!-- <th scope="col"></th>
-                <th scope="col"></th> -->
-                <th scope="col" class="text-white">BASIC</th>
-                <th scope="col" class="text-white">STANDARD</th>
-                <th scope="col" class="text-white">PREMIUM</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">
-                  Monthly price after free month ends on 6/19/19
-                </th>
-                <td class="">$8.99</td>
-                <td>$12.99</td>
-                <td>$15.99</td>
-              </tr>
-              <tr style="background: black;">
-                <th scope="row">
-                  HD Available
-                </th>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th scope="row">
-                  Ultra HD Available
-                </th>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr style="background: black;">
-                <th scope="row">
-                  Screens you can watch on at the same time
-                </th>
-                <div>
-                  <td>1</td>
-                  <td>2</td>
-                  <td>4</td>
-                </div>
-              </tr>
-              <tr>
-                <th scope="row">
-                  Watch on your laptop, TV, phone and tablet
-                </th>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr style="background: black;">
-                <th scope="row">
-                  Unlimited movies and TV shows
-                </th>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th scope="row">
-                  Cancel anytime
-                </th>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr style="background: black;">
-                <th scope="row">
-                  First month free
-                </th>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
+          <div
+            class="col-sm-12 col-12 py-sm-5 tab-3 tab-content"
+            id="tab-3-content"
+            style="display: none;"
+          >
+            <h4 class="text-white text-center d-sm-block d-none">
+              Choose one plan and watch everything on Netflix.
+            </h4>
+            <!--h4 mobile -->
+            <h4 class="text-white text-center mt-5 mb-3 d-block d-sm-none">
+              Choose one plan and watch everything on Netflix.
+            </h4>
+            <div class="mt-sm-4 text-center mb-sm-5 d-sm-block d-none">
+              <a href="" class="btnTabs">WATCH FREE FOR 30 DAYS</a>
+            </div>
+            <!-- boton mobile -->
+            <div class="mt-5 mb-5 text-center d-block d-sm-none">
+              <a href="" class="btnTabs">WATCH FREE FOR 30 DAYS</a>
+            </div>
+            <table
+              class="table table-striped table-dark py-sm-5 table-condensed"
+            >
+              <thead>
+                <tr style="background: black;">
+                  <th scope="col" class="ml-sm-5"></th>
+                  <th scope="col" class="text-white">BASIC</th>
+                  <th scope="col" class="text-white">STANDARD</th>
+                  <th scope="col" class="text-white">PREMIUM</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">
+                    Monthly price after free month ends on 6/19/19
+                  </th>
+                  <td class="">$8.99</td>
+                  <td>$12.99</td>
+                  <td>$15.99</td>
+                </tr>
+                <tr style="background: black;">
+                  <th scope="row">
+                    HD Available
+                  </th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    Ultra HD Available
+                  </th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr style="background: black;">
+                  <th scope="row">
+                    Screens you can watch on at the same time
+                  </th>
+                  <div>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>4</td>
+                  </div>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    Watch on your laptop, TV, phone and tablet
+                  </th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr style="background: black;">
+                  <th scope="row">
+                    Unlimited movies and TV shows
+                  </th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    Cancel anytime
+                  </th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr style="background: black;">
+                  <th scope="row">
+                    First month free
+                  </th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </section>
@@ -373,5 +432,7 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
+
+    <script src="app.js"></script>
   </body>
 </html>
